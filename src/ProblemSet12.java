@@ -24,9 +24,9 @@ public class ProblemSet12 {
     public long triangle(int rows) {
        if (rows < 0) {
            return -1;
-       } else if (rows == 1) {
-           return 1;
-       }
+       } else if (rows == 0) {
+           return 0;
+       } 
 
        return rows + triangle(rows - 1);
     }
